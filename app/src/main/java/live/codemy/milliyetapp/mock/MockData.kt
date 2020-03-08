@@ -20,6 +20,7 @@ import live.codemy.milliyetapp.ui.NewsFragment
  */
 
 object MockData {
+
     fun getNewsCategoryFragment(): List<FragmentModel> {
         val fragmentList = ArrayList<FragmentModel>()
 
@@ -64,29 +65,33 @@ object MockData {
             val bigNewsModel = NewsModel(
                 "https://imgfinans.milliyet.com.tr/i/haber/f_dfdf_321421462285.jpg",
                 "Ertelendi! Kolay alınmış bir karar değil",
+                true,
                 NewsType.BIG_NEWS.id
             )
             val smallNewsModel1 = NewsModel(
                 "https://imgfinans.milliyet.com.tr/i/haber/f_dfdf_321421462285.jpg",
                 "Ertelendi! Kolay alınmış bir karar değil",
+                false,
                 NewsType.SMALL_NEWS.id
             )
-
             val smallNewsModel2 = NewsModel(
                 "https://imgfinans.milliyet.com.tr/i/haber/f_dfdf_321421462285.jpg",
                 "Ertelendi! Kolay alınmış bir karar değil",
+                true,
                 NewsType.SMALL_NEWS.id
             )
 
             val smallNewsModel3 = NewsModel(
                 "https://imgfinans.milliyet.com.tr/i/haber/f_dfdf_321421462285.jpg",
                 "Ertelendi! Kolay alınmış bir karar değil",
+                false,
                 NewsType.SMALL_NEWS.id
             )
 
             val smallNewsModel4 = NewsModel(
                 "https://imgfinans.milliyet.com.tr/i/haber/f_dfdf_321421462285.jpg",
                 "Ertelendi! Kolay alınmış bir karar değil",
+                false,
                 NewsType.SMALL_NEWS.id
             )
 

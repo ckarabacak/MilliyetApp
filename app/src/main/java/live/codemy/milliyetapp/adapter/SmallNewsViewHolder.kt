@@ -4,7 +4,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import kotlinx.android.synthetic.main.adapter_item_big_news.view.*
+import kotlinx.android.synthetic.main.adapter_item_big_news.view.imgNews
+import kotlinx.android.synthetic.main.adapter_item_big_news.view.txtNewsTitle
+import kotlinx.android.synthetic.main.adapter_item_small_news.view.*
 import live.codemy.milliyetapp.R
 import live.codemy.milliyetapp.model.BaseNewsModel
 import live.codemy.milliyetapp.model.NewsModel
@@ -40,6 +42,14 @@ class SmallNewsViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
 
         itemView.setOnClickListener {
             onItemClickListener(newsModel)
+        }
+
+        itemView.swIsSaved.setOnCheckedChangeListener(null)
+
+        itemView.swIsSaved.isChecked = newsModel.isSaved
+
+        itemView.swIsSaved.setOnCheckedChangeListener { buttonView, isChecked ->
+            newsModel.isSaved = isChecked
         }
     }
 }
