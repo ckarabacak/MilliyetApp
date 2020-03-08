@@ -14,5 +14,6 @@ package live.codemy.milliyetapp.model
 data class NewsModel(
     val newsImageUrl: String,
     val newsTitle: String,
+    var isSaved: Boolean,
     override val itemViewType: Int
 ) : BaseNewsModel()

@@ -12,23 +12,36 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/txtNewsTitle"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ellipsize="end"
-            android:maxLines="2"
-            android:padding="16dp"
-            tools:text="Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!" />
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/imgNews"
+            <TextView
+                android:id="@+id/txtNewsTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="16dp"
+                tools:text="Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!" />
+
+            <ImageView
+                android:id="@+id/imgNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_launcher"
+                android:minHeight="100dp" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/swIsSaved"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@mipmap/ic_launcher"
-            android:minHeight="100dp" />
+            android:layout_margin="8dp"
+            android:text="Kaydedildi   " />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
