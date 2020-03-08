@@ -20,6 +20,7 @@ import live.codemy.milliyetapp.ui.NewsFragment
  */
 
 object MockData {
+
     fun getNewsCategoryFragment(): List<FragmentModel> {
         val fragmentList = ArrayList<FragmentModel>()
 
@@ -71,7 +72,6 @@ object MockData {
                 "Ertelendi! Kolay alınmış bir karar değil",
                 NewsType.SMALL_NEWS.id
             )
-
             val smallNewsModel2 = NewsModel(
                 "https://imgfinans.milliyet.com.tr/i/haber/f_dfdf_321421462285.jpg",
                 "Ertelendi! Kolay alınmış bir karar değil",

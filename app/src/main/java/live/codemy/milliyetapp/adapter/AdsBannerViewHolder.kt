@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.adapter_item_ads_banner.view.*
 import live.codemy.milliyetapp.R
@@ -33,8 +32,6 @@ class AdsBannerViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
         onItemClickListener: (BaseNewsModel) -> Unit
     ) {
         MobileAds.initialize(itemView.context) {}
-        itemView.adView.adSize = AdSize.BANNER
-        itemView.adView.adUnitId = "ca-app-pub-3940256099942544/6300978111"
         val adRequest = AdRequest.Builder().build()
         itemView.adView.loadAd(adRequest)
     }
